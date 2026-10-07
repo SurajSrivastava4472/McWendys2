@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A7112383076891900C7D1E6 /* Insanibu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7112273076891900C7D1E6 /* Insanibu.ttf */; };
+		9A71123E30768FDF00C7D1E6 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A71123D30768FDF00C7D1E6 /* Ingredient.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3EDEAB7B306EA9A7005CF8C8 /* McWendys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McWendys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7112273076891900C7D1E6 /* Insanibu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Insanibu.ttf; sourceTree = "<group>"; };
+		9A71123D30768FDF00C7D1E6 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9A71123C30768F4000C7D1E6 /* Exceptions for "McWendys" folder in "McWendys" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3EDEAB7A306EA9A7005CF8C8 /* McWendys */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3EDEAB7D306EA9A7005CF8C8 /* McWendys */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9A71123C30768F4000C7D1E6 /* Exceptions for "McWendys" folder in "McWendys" target */,
+			);
 			path = McWendys;
 			sourceTree = "<group>";
 		};
@@ -32,8 +52,10 @@
 		3EDEAB72306EA9A7005CF8C8 = {
 			isa = PBXGroup;
 			children = (
+				9A71123D30768FDF00C7D1E6 /* Ingredient.swift */,
 				3EDEAB7D306EA9A7005CF8C8 /* McWendys */,
 				3EDEAB7C306EA9A7005CF8C8 /* Products */,
+				9A7112273076891900C7D1E6 /* Insanibu.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7112383076891900C7D1E6 /* Insanibu.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A71123E30768FDF00C7D1E6 /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +280,7 @@
 				DEVELOPMENT_TEAM = TLC7WX7D37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = McWendys/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +313,7 @@
 				DEVELOPMENT_TEAM = TLC7WX7D37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = McWendys/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

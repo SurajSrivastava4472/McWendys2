@@ -1,13 +1,11 @@
+
 //
 //  Item.swift
 //  McWendys
 //
 //  Created by SURAJ SRIVASTAVA on 10/5/26.
 //
-
 import Foundation
-
-
 @Observable
 class item{
      var name:String
@@ -25,3 +23,4 @@ class item{
         
     }
 }
+

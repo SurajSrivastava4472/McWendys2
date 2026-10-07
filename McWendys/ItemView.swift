@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct ItemView: View {
     
     @State var object:item
-    @Binding var cart:[cartItem]
+    @Binding var cart:[CartItem]
     @State var go = false
     @State var holder = 0
     @State var enabled = true
@@ -26,20 +26,12 @@ struct SwiftUIView: View {
             
             
             Text(object.name)
-       
-            
+            Text( "\(object.calories)" )
+            Text( "\(object.price)" )
             
             HStack{
                 
-                Button {
-                    holder = holder + 1
-                    if(holder > 0){
-                        enabled = false
-                    }
-                } label: {
-                    Image(systemName: "plus.circle")
-                    
-                }
+               
                 Button {
                     if(holder > 0){
                         holder = holder - 1
@@ -49,6 +41,16 @@ struct SwiftUIView: View {
                     }
                 } label: {
                     Image(systemName: "minus.circle")
+                   
+                }
+                Button {
+                    holder = holder + 1
+                    if(holder > 0){
+                        enabled = false
+                    }
+                } label: {
+                    Image(systemName: "plus.circle")
+                    
                 }
                 Text("\(holder)")
                 
@@ -61,7 +63,7 @@ struct SwiftUIView: View {
             Button("Add"){
                 
                 
-                var temp = cartItem(itemObject: object, num: holder)
+                var temp = CartItem(itemObject: object, num: holder)
                 cart.append(temp)
                 go.toggle()
                 print(cart)
